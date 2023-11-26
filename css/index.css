@@ -1,8 +1,53 @@
 body {
     text-align: center;
+    background-color: antiquewhite;
 }
 
-img {
-    width: 300px;
-    border-radius: 50%;
+header {
+    background-color:aqua;
+    height:200px;
+}
+
+nav.toLoginPage {
+    width: 200px;
+    height: 30px;
+    margin-left: auto;
+    border: solid 2px;
+}
+
+section>article {
+    height: 200px;
+    border: solid 2px;
+    margin: 30px 20px;
+}
+
+
+aside nav ul.navMenu{
+    position: fixed;
+    right: -65px;
+    top : 330px;
+    
+    width: 200px;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+aside nav ul.navMenu li {
+    list-style: none;
+    width: 8em;
+    height: 2.5em;
+    background-color: #c9c9c9;
+    border-right: 1px solid #818181;
+    text-align: center;
+    border: solid 1px;
+
+    display: flex;
+    flex-direction: row; /* 생략가능 */
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
 }
