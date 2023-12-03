@@ -51,6 +51,84 @@ footer span.labels {
     width: 130px;
 }
 
+.container {
+    width: 600px;
+    height: 700px;
+    background-color: whitesmoke;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[name=signupFrm] {
+    width: 600px;
+    height: 700px;
+    font-size : 27px;
+    background-color: white;
+    border: 4px solid lightgray;
+    padding: 20px 20px 5px 20px;
+}
+
+table {
+  border-collapse: collapse;
+}  
+
+th {
+  width: 110px;
+  text-align: left;
+  padding: 5px 0 0 5px;
+  height: 40px;
+}
+
+td {
+  position: relative;
+}
+
+input {
+    width: 370px;
+    height: 25px;
+    border: none;
+    background-color: beige;
+    border : 1px solid rgb(0, 0, 0);
+    
+    margin : 20px;
+}
+input:focus {
+  outline: none;
+}
+input[type=submit] {
+    margin-top: 30px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    background-color: burlywood;
+    font-weight: bolder;
+}
+input#email1, input#email2 {
+    width: 150px;
+}
+
+input#address {
+    margin-top: 13px;
+}
+
+.msg {
+  position: absolute;
+  margin-top : -20px;
+  margin-left: 20px;
+  font-size: 20px;
+  display: none;
+}
+.msg-required {
+  color: red;
+}
+.msg-password, .msg-name {
+  color: rgb(127, 127, 127);
+}
+
+
+
 
 nav.toLoginPage {
     position: relative;
@@ -68,61 +146,11 @@ nav.toLoginPage:hover{
     background-color: beige;
 }
 
-article {
-    text-align: center;
-}
 
-section article{
-    height: 600px;
-    width: 1000px;
-    height: 800px;
-    border: solid 2px;
-    margin: 25px auto;
-    font-size: 30px;
-}
 
-#tempDiv{
-    width: 1000px;
-    height: 400px;
-    background-image: url('/images/helloimg.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border : 2px solid black;
-    margin: 50px auto;
-    border-radius: 10%;
-}
 
-#navDiv {
-    display: flex;
-    width:1000px;
-    margin: 50px auto;
-}
 
-section article.toMyPage{
-    width: 300px;
-    height: 400px;
-    background-image: url('/images/iamimg_unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius : 25%;
-}
-section article.toHobbyPage{
-    width: 300px;
-    height: 400px;
-    background-image: url('/images/gameimg_pixabay.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius : 25%;
-}
 
-section article.toRoadMapPage {
-    width: 300px;
-    height: 400px;
-    background-image: url('/images/stepimg_pixabay.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius : 25%;
-}
 
 aside nav ul.navMenu{
     position: fixed;
@@ -193,61 +221,4 @@ aside nav ul.navMenu :first-child{
 aside nav ul.navMenu :last-child{
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
-}
-
-article.toMyPage:hover {
-    animation-name: my-ani-rotate;
-    animation-duration: 0.5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-}
-article.toHobbyPage:hover {
-    animation-name: my-ani-rotate;
-    animation-duration: 0.5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-}
-article.toRoadMapPage:hover {
-    animation-name: my-ani-rotate;
-    animation-duration: 0.5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-}
-
-@keyframes my-ani-rotate {
-    10% {
-        transform: rotate(36deg);
-    }
-    20% {
-        transform: rotate(72deg);
-    }
-    30% {
-        transform: rotate(108deg);
-    }
-    40% {
-        transform: rotate(144deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    60% {
-        transform: rotate(216deg);
-    }
-    70% {
-        transform: rotate(252deg);
-    }
-    80% {
-        transform: rotate(288deg);
-    }
-    90% {
-        transform: rotate(324deg);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-
-
 }

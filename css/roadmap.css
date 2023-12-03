@@ -51,7 +51,6 @@ footer span.labels {
     width: 130px;
 }
 
-
 nav.toLoginPage {
     position: relative;
     background-color: azure;
@@ -81,47 +80,132 @@ section article{
     font-size: 30px;
 }
 
-#tempDiv{
+#usingPgDiv{
     width: 1000px;
     height: 400px;
-    background-image: url('/images/helloimg.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     border : 2px solid black;
     margin: 50px auto;
     border-radius: 10%;
+    background-color: linen;
 }
 
-#navDiv {
+.circle {
+    width: 170px;
+    height: 170px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius : 15%;
+    text-align : center;
+    list-style-type: none;
+}
+
+h2.copHead {
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: aqua;
+    width: 300px;
+    margin: 35px auto -20px;
+    font-size : 40px;
+}
+
+h2.copHead2 {
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: aqua;
+    width: 320px;
+    height: 80px;
+    margin: 35px auto;
+    font-size : 40px;
+}
+
+ol li.iconName{
+    list-style: none;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 45%;
+    background-color: aquamarine;
+    font-size : 30px;
+}
+ol.copIconsName{
     display: flex;
-    width:1000px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+ol.copIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 35px 35px; 
+}
+
+.icon1 {
+    width: 120px;
+    height: 120px;
+    margin-top : 23px;
+    margin: 23px 
+}
+
+.ols{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 500px;
+    border : 2px solid black;
     margin: 50px auto;
+    border-radius: 10%;
+    background-color: linen;
+}
+.ols span {
+    margin : 30px ;
 }
 
-section article.toMyPage{
-    width: 300px;
-    height: 400px;
-    background-image: url('/images/iamimg_unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius : 25%;
+div.learnDiv {
+    display: flex;
+    width: 1000px;
+    vertical-align: middle;
+    font-size: 40px;
+    margin: 10px auto;
 }
-section article.toHobbyPage{
-    width: 300px;
-    height: 400px;
-    background-image: url('/images/gameimg_pixabay.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius : 25%;
+div.learnDiv {
+  text-align: left;
+}
+.icon2 {
+    width : 50px;
+    height : 50px;
 }
 
-section article.toRoadMapPage {
-    width: 300px;
-    height: 400px;
-    background-image: url('/images/stepimg_pixabay.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius : 25%;
+
+
+.ols2{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 500px;
+    padding-left: 0px;
+    padding-right: 40px;
+    border : 2px solid black;
+    margin: 50px auto;
+    border-radius: 10%;
+    background-color: linen;
+}
+div.learnDiv2 {
+    display: flex;
+    width: 1000px;
+    text-align: left;
+    font-size: 26px;
+    margin: 10px auto;
+}
+div.learnDiv2 ul span {
+    font-size: 40px;
+}
+
+ol.ols:hover, ol.ols2:hover {
+    transform: scale(1.3);
+}
+
+.circle:hover, .icon2:hover {
+    transform: scale(1.5);
 }
 
 aside nav ul.navMenu{
@@ -193,61 +277,4 @@ aside nav ul.navMenu :first-child{
 aside nav ul.navMenu :last-child{
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
-}
-
-article.toMyPage:hover {
-    animation-name: my-ani-rotate;
-    animation-duration: 0.5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-}
-article.toHobbyPage:hover {
-    animation-name: my-ani-rotate;
-    animation-duration: 0.5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-}
-article.toRoadMapPage:hover {
-    animation-name: my-ani-rotate;
-    animation-duration: 0.5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-}
-
-@keyframes my-ani-rotate {
-    10% {
-        transform: rotate(36deg);
-    }
-    20% {
-        transform: rotate(72deg);
-    }
-    30% {
-        transform: rotate(108deg);
-    }
-    40% {
-        transform: rotate(144deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    60% {
-        transform: rotate(216deg);
-    }
-    70% {
-        transform: rotate(252deg);
-    }
-    80% {
-        transform: rotate(288deg);
-    }
-    90% {
-        transform: rotate(324deg);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-
-
 }

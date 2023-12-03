@@ -51,7 +51,6 @@ footer span.labels {
     width: 130px;
 }
 
-
 nav.toLoginPage {
     position: relative;
     background-color: azure;
@@ -81,48 +80,39 @@ section article{
     font-size: 30px;
 }
 
-#tempDiv{
-    width: 1000px;
-    height: 400px;
-    background-image: url('/images/helloimg.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border : 2px solid black;
-    margin: 50px auto;
-    border-radius: 10%;
+.box{
+    margin: 100px auto;
+    width: 800px;
+    height: 900px;
+    border: 1px solid lightgray;
+    border-radius: 15%;
+    background-color: beige;
 }
 
-#navDiv {
-    display: flex;
-    width:1000px;
-    margin: 50px auto;
+.box h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin : 70px auto;
+    width: 630px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 5px;
 }
 
-section article.toMyPage{
-    width: 300px;
-    height: 400px;
-    background-image: url('/images/iamimg_unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius : 25%;
-}
-section article.toHobbyPage{
-    width: 300px;
-    height: 400px;
-    background-image: url('/images/gameimg_pixabay.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius : 25%;
-}
 
-section article.toRoadMapPage {
-    width: 300px;
-    height: 400px;
-    background-image: url('/images/stepimg_pixabay.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius : 25%;
-}
+
+
+
+
+
+
+
+
 
 aside nav ul.navMenu{
     position: fixed;
@@ -193,61 +183,4 @@ aside nav ul.navMenu :first-child{
 aside nav ul.navMenu :last-child{
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
-}
-
-article.toMyPage:hover {
-    animation-name: my-ani-rotate;
-    animation-duration: 0.5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-}
-article.toHobbyPage:hover {
-    animation-name: my-ani-rotate;
-    animation-duration: 0.5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-}
-article.toRoadMapPage:hover {
-    animation-name: my-ani-rotate;
-    animation-duration: 0.5s;
-    animation-direction: normal;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-}
-
-@keyframes my-ani-rotate {
-    10% {
-        transform: rotate(36deg);
-    }
-    20% {
-        transform: rotate(72deg);
-    }
-    30% {
-        transform: rotate(108deg);
-    }
-    40% {
-        transform: rotate(144deg);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    60% {
-        transform: rotate(216deg);
-    }
-    70% {
-        transform: rotate(252deg);
-    }
-    80% {
-        transform: rotate(288deg);
-    }
-    90% {
-        transform: rotate(324deg);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-
-
 }
