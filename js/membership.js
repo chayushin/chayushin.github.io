@@ -75,6 +75,7 @@ document.signupFrm.onsubmit = (e) => {
       )
         return false;
 
+  alert('🎉회원가입이 성공적으로 완료되었습니다.🎉');
 };
 
 // 비밀번호 일치 검사 메소드
@@ -130,13 +131,13 @@ class SingupInfo{
 const name = document.querySelector('#name')
 const id = document.querySelector("#id");
 const password = document.querySelector("#password");
-const passwrordCheck = document.querySelector("#passwordCheck");
+const passwordCheck = document.querySelector("#passwordCheck");
 
 /**
  * input + p.msg.msg-required 의 구조가 동일하므로
  * 반복문을 통해 동일한 핸들러를 각각 바인딩한다.
  */
-[name, id, password, passwrordCheck].forEach((input) => {
+[name, id, password, passwordCheck].forEach((input) => {
   input.addEventListener('blur', (e) => {
     // e.target.nextElementSibling -> p.msg.msg-required
     if(e.target.value)
