@@ -32,7 +32,7 @@ section {
 
 footer{
     top: 50px;
-    width: 100%;
+    width: 100rem;
     height: 200px;
     background-color: whitesmoke;
     margin : 90px auto;
